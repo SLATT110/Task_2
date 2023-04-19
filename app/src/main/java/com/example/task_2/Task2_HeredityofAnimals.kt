@@ -35,7 +35,7 @@ fun printAnimalDetails(animals: List<Animal>) {
 fun main() {
     val dog1 = Dog("Tony", 5, "Golden Retriever",true)
     val cat1 = Cat("Pamook", 13, "Tabby", true)
-    val animals = listOf<Animal>(dog1, cat1, dog1)
+    val animals = listOf<Animal>(dog1, cat1)
     printAnimalDetails(animals)
     animals.forEach { animal ->
         val oldStatus = if (animal.isOld()) "old" else "not old"
