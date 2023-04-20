@@ -27,7 +27,6 @@ fun printAnimalDetails(animals: List<Animal>) {
         when (animal) {
             is Dog -> println("Name: ${animal.name}, Breed: ${animal.breed}")
             is Cat -> println("Name: ${animal.name}, Color: ${animal.color}")
-            else -> println("Name: ${animal.name}")
         }
         animal.sleep()
     }
